@@ -1,21 +1,38 @@
 # Launch Channel Matrix
 
-Coordinate channel-specific assets around one launch date. Track owners, relative deadlines, and readiness.
+**Holistic AI · Platform launch execution**
 
-## Connection to my experience
+Launch Channel Matrix helps product marketing coordinate assets across teams around a shared launch date. Each row pairs a channel and deliverable with an owner, a deadline relative to launch, and a readiness status.
 
-Inspired by John Miranda’s work on the Holistic AI platform launch across web, email, social, search, paid, press, and analyst materials.
+## Why I built it
 
-This independent portfolio project uses fictional examples and contains no employer materials, customer data, or analyst report excerpts.
+I built this around my work coordinating web, email, social, search, paid, press, and analyst materials for the 2025/26 Holistic AI platform launch. It demonstrates how a shared date can anchor planning across teams with different lead times.
 
-## Try it
+## Try the sample
 
-1. Clone the repository or download the ZIP.
-2. Open `index.html` in a modern browser. No install or backend is required.
-3. Set a launch date, move a channel deadline, and export the calendar with calculated dates and asset owners.
+1. Find **Platform overview page** in the **Web** row. Its offset of `-7` puts it one week before the launch date.
+2. Change the launch date and observe the calculated dates move together. Use `0` for launch day and a positive offset for follow-up assets.
+3. Assign a new owner or add an asset. Use the readiness summary to see how many items are in draft, in review, or ready.
+4. Click **Download Markdown** to export the calendar with calculated dates, owners, and statuses.
 
-Edits live in the current browser tab. Download Markdown to keep a copy before closing or reloading.
+Offsets count calendar days. You can adjust individual offsets to account for weekends, holidays, or team milestones.
 
-## Source
+## Run locally
 
-`index.html` defines the workspace, `style.css` handles layout, `data.js` contains the fictional scenario, and `app.js` implements editing, summaries, and export.
+Download the repository ZIP or clone it, then open `index.html` in a modern browser.
+
+```sh
+git clone https://github.com/johnmir94/launch-channel-matrix.git
+cd launch-channel-matrix
+```
+
+The app uses HTML, CSS, and JavaScript and runs entirely in the browser without an account or backend. Sample data is fictional. Edits stay in the current tab, so download the Markdown before reloading or closing it.
+
+## Source files
+
+| File | Role |
+| --- | --- |
+| `index.html` | Workspace layout and controls |
+| `style.css` | Responsive styling |
+| `data.js` | Fictional sample workspace |
+| `app.js` | Editing, validation, summaries, and Markdown export |
